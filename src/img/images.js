@@ -1,0 +1,9 @@
+import './products_1.jpg';
+import './products_2.jpg';
+import './products_3.jpg';
+import './products_4.jpg';
+import './products_5.jpg';
+import './products_6.jpg';
+import './products_7.jpg';
+import './products_8.jpg';
+import './logo.png';

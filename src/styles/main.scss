@@ -1,0 +1,50 @@
+
+/* --------- variables --------- */
+$responsive: true;
+
+$grey: #999999;
+$black: #333333;
+$red: #fc411d;
+$blue: #187dd6;
+
+$ffL: 'Lato', sans-serif;
+$ffP: 'Playfair Display', serif;
+
+/* --------- classes --------- */
+.heading-wrap {
+    text-align: center;
+}
+.heading {
+    color: $black;
+    font-family: $ffP;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+/* --------- adjustment --------- */
+
+// @import "styles/_misc/font-awesome";
+// @import "styles/_misc/fonts";
+@import "./_misc/mixins";
+@import "./_misc/adjustment";
+
+// /* --------- common --------- */
+//
+@import "./common/header";
+@import "./common/logo";
+@import "./common/menu";
+@import "./common/nav";
+@import "./common/filter";
+@import "./common/currency";
+@import "./common/languages";
+@import "./common/form";
+@import "./common/footer";
+//
+//
+// /* --------- sections --------- */
+//
+@import "./section/catalog";
+@import "./section/subscribe";
+//
+// // @import "sections/**/*";

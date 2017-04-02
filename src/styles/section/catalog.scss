@@ -1,0 +1,109 @@
+.catalog {
+
+    &__products {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+    	margin-bottom: 36px;
+    	position: relative;
+
+    	&:hover .catalog__img {
+    		transform: scale(1.03);
+    		box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    	}
+
+    	&_new:after {
+    		display: block;
+    		content: "";
+    		width: 52px;
+    		height: 27px;
+    		background: url(../img/new.png) no-repeat top left;
+    		position: absolute;
+    		top: 23px;
+    		left: 30px;
+    	}
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+    	text-decoration: none;
+    }
+
+    &__img {
+    	transition: all .3s;
+    }
+
+/*********** DISCRIPTIONS ************/
+
+    &__discription {
+    	padding-top: 20px;
+        text-align: center;
+
+    	&-text {
+    		margin-bottom: 10px;
+    		font: 400 16px/16px $ffP;
+    		color: #333;
+    		display: block;
+    	}
+
+    	&-price {
+    		color: rgba(51, 51, 51, 0.5);
+    		font-size: 16px;
+    		font-weight: 400;
+    		line-height: 20px;
+
+    		&:before {
+    			display: inline-block;
+    			content: attr(data-actual-price);
+    			margin-right: 10px;
+    			color: rgba(51, 51, 51, 0.5);
+    			text-decoration: line-through;
+    		}
+    	}
+
+        .sale-price {
+            color: #fc411d;
+        }
+    }
+
+/*********** LOAD LINK ************/
+
+    &__load {
+        text-align: center;
+
+        &-link {
+        	color: rgba(51, 51, 51, 0.5);
+        	font-size: 13px;
+        	font-weight: 700;
+        	text-transform: uppercase;
+        	text-decoration: none;
+        	position: relative;
+
+        	&:hover.catalog__load-link:after {
+        		width: 100%;
+        	}
+
+        	&:after {
+        		display: block;
+        		content: "";
+        		width: 0;
+        		height: 1px;
+        		background: rgba(51, 51, 51, 0.5);
+        		transition: all .3s;
+        		position: absolute;
+        		bottom: -2px;
+        		left: 0;
+        	}
+        }
+    }
+}

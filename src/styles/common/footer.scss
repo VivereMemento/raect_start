@@ -1,0 +1,15 @@
+.footer {
+    padding-top: 30px;
+
+    &__nav-link_mods {
+        color: $black;
+
+        &:hover {
+            color: lighten( $black, 30% );
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}

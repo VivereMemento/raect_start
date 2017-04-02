@@ -1,0 +1,20 @@
+.form {
+
+    &-wrap {
+        width: 300px;
+        display: inline-block;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 15px 20px;
+        font: 700 12px/12px $ffL;
+        color: #fff;
+        text-transform: uppercase;
+        background: transparent;
+        border: 2px solid fade-out(#fff, .5);
+        border-radius: 50px;
+        outline: none;
+        @include placecolor(lighten(#fff, 40%));
+    }
+}

@@ -1,0 +1,24 @@
+.subscribe {
+    padding: 70px 0;
+    text-align: center;
+    background: rgba(24, 125, 214, 0.81) url(../img/subscribe_bg.jpg) no-repeat top left;
+    background-size: cover;
+}
+
+.title-wrap {
+    margin-bottom: 25px;
+}
+
+.title {
+    margin-bottom: 25px;
+    font: 700 12px/12px $ffL;
+    color: #333;
+    text-transform: uppercase;
+    display: block;
+    opacity: 0.6;
+}
+
+.subtitle {
+    font: 400 38px/38px $ffP;
+    color: white;
+}
